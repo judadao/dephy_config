@@ -1,0 +1,7 @@
+mainmenu "Dephy Config"
+
+source "Kconfig.zephyr"
+
+config DEPHY_CONFIG
+	bool "Dephy Config module"
+	default y

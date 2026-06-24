@@ -1,0 +1,4 @@
+name: dephy_config
+build:
+  cmake: zephyr
+  kconfig: zephyr/Kconfig

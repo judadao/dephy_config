@@ -1,0 +1,6 @@
+if(CONFIG_DEPHY_CONFIG)
+  zephyr_library_named(dephy_config)
+  zephyr_library_sources(../src/config_store.c)
+  zephyr_library_include_directories(../include)
+  zephyr_include_directories(../include)
+endif()

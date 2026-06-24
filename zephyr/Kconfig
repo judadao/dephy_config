@@ -1,0 +1,3 @@
+config DEPHY_CONFIG
+	bool "Dephy Config module"
+	default y
