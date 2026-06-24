@@ -1,0 +1,5 @@
+todos:
+  - id: config-store-versioning
+    status: pending
+    title: Add optional record version helpers
+    notes: Product schemas currently handle versioning externally.

@@ -1,0 +1,7 @@
+{
+  "name": "dephy_config",
+  "type": "dephy-module",
+  "language": "c",
+  "zephyr_module": true,
+  "description": "Reusable key/blob config store for Dephy products"
+}

@@ -7,10 +7,10 @@ OUTDIR ?= build_out
 $(OUTDIR):
 	mkdir -p $(OUTDIR)
 
-$(OUTDIR)/smoke_config_store: tests/smoke_config_store.c src/config_store.c include/dephy_config/config_store.h | $(OUTDIR)
-	$(CC) $(CFLAGS) -Iinclude tests/smoke_config_store.c src/config_store.c -o $@
+$(OUTDIR)/unit_config_store: tests/unit_config_store.c src/config_store.c include/dephy_config/config_store.h | $(OUTDIR)
+	$(CC) $(CFLAGS) -Iinclude tests/unit_config_store.c src/config_store.c -o $@
 
-test: $(OUTDIR)/smoke_config_store
+test: $(OUTDIR)/unit_config_store
 	$<
 
 clean:
