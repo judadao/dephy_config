@@ -17,3 +17,18 @@ dephy_config_store_load(100, &settings, sizeof(settings));
 ```
 
 On POSIX, set `DEPHY_CONFIG_DIR` to isolate test storage.
+
+## Systematic Regression Testing
+
+From the workspace root, run the shared pytest regression module:
+
+```sh
+../dephy_testkit/.venv/bin/python -m pytest ../dephy_testkit/tests/regression --module dephy_config
+../dephy_testkit/.venv/bin/python -m pytest ../dephy_testkit/tests/regression --module dephy_config --profile integration
+```
+
+The local repo test remains:
+
+```sh
+make -f Makefile.linux test
+```
